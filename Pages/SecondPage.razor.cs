@@ -6,14 +6,14 @@ namespace BlazorMultipleCascadingParametersIssue.Pages
     public partial class SecondPage
     {
         [CascadingParameter]
-        public HeaderInfo HeaderInfo { get; set; }
+        public HeaderTitle HeaderTitle { get; set; }
 
         [CascadingParameter]
-        public PageInfo PageInfo { get; set; }
+        public HeaderSubtitle HeaderSubtitle { get; set; }
         protected override void OnInitialized()
         {
-            HeaderInfo.Title = "Second Page";
-            PageInfo.Content = "This is second page";
+            HeaderTitle.Title = "Title2";
+            HeaderSubtitle.Subtitle = "Subtitle2";
 
             base.OnInitialized();
         }

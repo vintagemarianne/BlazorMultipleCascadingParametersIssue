@@ -1,17 +1,17 @@
 ﻿namespace BlazorMultipleCascadingParametersIssue.Shared
 {
-    public class HeaderInfo
+    public class HeaderTitle
     {
         public string Title { get; set; }
     }
 
-    public class PageInfo
+    public class HeaderSubtitle
     {
-        public string Content { get; set; }
+        public string Subtitle { get; set; }
     }
     public partial class MainLayout
     {
-        public HeaderInfo HeaderInfo { get; set; } = new HeaderInfo { Title = "" };
-        public PageInfo PageInfo { get; set; } = new PageInfo { Content = "" };
+        public HeaderTitle HeaderTitle { get; set; } = new HeaderTitle { Title = "" };
+        public HeaderSubtitle HeaderSubtitle { get; set; } = new HeaderSubtitle { Subtitle = "" };
     }
 }

@@ -5,6 +5,9 @@ namespace BlazorMultipleCascadingParametersIssue.Shared
     public partial class Header
     {
         [CascadingParameter]
-        public HeaderInfo HeaderInfo { get; set; }
+        public HeaderTitle HeaderTitle { get; set; }
+
+        [CascadingParameter]
+        public HeaderSubtitle HeaderSubtitle { get; set; }
     }
 }
